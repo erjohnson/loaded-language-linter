@@ -1,0 +1,19 @@
+{
+  "name": "loaded-language-linter",
+  "version": "0.0.1",
+  "description": "A small Node.JS library to detect loaded language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erjohnson/loaded-language-linter.git"
+  },
+  "author": "Eric Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erjohnson/loaded-language-linter/issues"
+  },
+  "homepage": "https://github.com/erjohnson/loaded-language-linter#readme"
+}
