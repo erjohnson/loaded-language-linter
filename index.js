@@ -17,22 +17,24 @@ function lint(input) {
 
   switch (_isUrl(input)) {
     case true:
-      textract.fromUrl(url, function( error, res ) {
-        text = res.toLowerCase()
+      textract.fromUrl(url, {preserveLineBreaks: true}, function(error, res) {
+        text = res
       })
       break;
     case false:
-      text = input.toLowerCase()
+      text = input
       break;
   }
 
+  let lcText = text.toLowerCase()
+
   for (const term of terms) {
-    if (text.indexOf(term) > -1) {
+    if (lcText.indexOf(term) > -1) {
       matches.push(term);
     };
   };
 
-  return matches;
+  return {text: text, matches: matches};
 }
 
 module.exports = {
