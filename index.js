@@ -13,20 +13,21 @@ function _isUrl(input) {
 
 function lint(input) {
   let text;
+  let lcText;
   let matches = [];
 
   switch (_isUrl(input)) {
     case true:
       textract.fromUrl(url, {preserveLineBreaks: true}, function(error, res) {
-        text = res
-      })
+        text = res;
+        lcText = res.toLowerCase();
+      });
       break;
     case false:
-      text = input
+      text = input;
+      lcText = input.toLowerCase();
       break;
   }
-
-  let lcText = text.toLowerCase()
 
   for (const term of terms) {
     if (lcText.indexOf(term) > -1) {
