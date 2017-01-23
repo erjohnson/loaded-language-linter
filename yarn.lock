@@ -180,10 +180,6 @@ supports-color@3.1.2:
   dependencies:
     has-flag "^1.0.0"
 
-valid-file:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/valid-file/-/valid-file-0.0.2.tgz#df634b07f0aa44af2a12bbf8893a01c59c4ed1df"
-
 valid-url:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/valid-url/-/valid-url-1.0.9.tgz#1c14479b40f1397a75782f115e4086447433a200"
