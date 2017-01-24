@@ -1,1 +1,5 @@
+# Babel.JS files
 source
+
+# Output of 'npm pack'
+*.tgz

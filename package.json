@@ -1,6 +1,6 @@
 {
   "name": "loaded-language-linter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A small Node.JS library to detect loaded language.",
   "main": "./dist/index.js",
   "scripts": {
