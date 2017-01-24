@@ -5,7 +5,7 @@
 
 # loaded-language-linter
 
-A small Node.JS library to detect [loaded language][1] in text or a given url.
+A small Node.JS library to detect [loaded language][1] in given text.
 
 ## Install
 
@@ -20,10 +20,6 @@ npm i loaded-language-linter
 var linter = require('loaded-language-linter');
 
 linter('Lorem ipsum dolor sit amet');
-
-// or
-
-linter('https://www.somewebpage.com/article');
 ```
 
 ## About
