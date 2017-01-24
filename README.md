@@ -1,6 +1,11 @@
+[1]: https://en.wikipedia.org/wiki/Loaded_language
+[2]: https://en.wikipedia.org/wiki/Eric_Weinstein
+[3]: https://www.edge.org/response-detail/27181
+[4]: https://en.wikipedia.org/wiki/Emotive_conjugation
+
 # loaded-language-linter
 
-A small Node.JS library to detect [loaded language](https://en.wikipedia.org/wiki/Loaded_language) in text or a given url.
+A small Node.JS library to detect [loaded language][1] in text or a given url.
 
 ## Install
 
@@ -11,12 +16,16 @@ npm i loaded-language-linter
 ## Usage
 
 ```js
-// import the module
-const linter = require('loaded-language-linter');
+// require the module
+var linter = require('loaded-language-linter');
 
-linter.lint('Lorem ipsum dolor sit amet')
+linter('Lorem ipsum dolor sit amet');
 
 // or
 
-linter.lint('https://www.somewebpage.com/article')
+linter('https://www.somewebpage.com/article');
 ```
+
+## About
+
+This project was inspired by [Eric Weinstein's][2] response to the question ["What scientific term or concept ought to be more widely known?"][3]: [Russell conjugation (emotive conjugation)][4].
