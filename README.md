@@ -24,4 +24,8 @@ linter('Lorem ipsum dolor sit amet');
 
 ## About
 
-This project was inspired by [Eric Weinstein's][2] response to the question ["What scientific term or concept ought to be more widely known?"][3]: [Russell conjugation (emotive conjugation)][4].
+This project was inspired by [Eric Weinstein's][2] response to:
+
+> ["What scientific term or concept ought to be more widely known?"][3]
+
+[Russell conjugation (emotive conjugation)][4].
