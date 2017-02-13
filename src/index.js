@@ -4,15 +4,16 @@ module.exports = function (input) {
 
   const terms = JSON.parse(fs.readFileSync(__dirname + "/../terms.json", "utf8"))['all'];
 
-  let text = input;
-  let lowerCaseText = input.toLowerCase();
-  let matches = [];
+  let regex = /[.,\/#!$%\^&\*;:{}=\_`~()]/g
+  let stripText = input.toLowerCase().replace(regex,' ');
+  let matchArray = [];
 
   for (const term of terms) {
-    if (lowerCaseText.indexOf(term) > -1) {
-      matches.push(term);
+    let toMatch = ' ' + term + ' ';
+    if (stripText.includes(toMatch)) {
+      matchArray.push(term);
     }
-  }
+  };
 
-  return {text: text, matches: matches};
+  return {text: input, matches: matchArray};
 };

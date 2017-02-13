@@ -12,7 +12,7 @@ describe('loaded-language-linter', () => {
     it('should ignore capitalization.', () => {
       let testString = 'That person is a Socialist.';
       let result = linter(testString)
-      assert.equal("socialist", result.matches[0])
+      assert.equal('socialist', result.matches[0])
       assert.equal(1, result.matches.length)
     })
 
@@ -31,11 +31,17 @@ describe('loaded-language-linter', () => {
     })
 
     it('should return formatted text along with matches', () => {
-      let testString = 'That person is a Socialist.';
+      let testString = 'That person is a Socialist.'
       let result = linter(testString)
-      assert.equal("socialist", result.matches[0])
+      assert.equal('socialist', result.matches[0])
       assert.equal(1, result.matches.length)
       assert.equal(testString, result.text)
+    })
+
+    it('should ignore a match within a larger word', () => {
+      let testString = 'Romanticism'
+      let result = linter(testString)
+      assert.equal(0, result.matches.length)
     })
   })
 })

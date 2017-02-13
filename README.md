@@ -19,7 +19,15 @@ npm i loaded-language-linter
 // require the module
 var linter = require('loaded-language-linter');
 
-linter('Lorem ipsum dolor sit amet');
+var result = linter('Lorem ipsum dolor sit amet family values.');
+
+console.log(result.text)
+// returns original text
+// 'Lorem ipsum dolor sit amet family values.'
+
+console.log(result.matches)
+// returns Array of matches
+// [ 'family values' ]
 ```
 
 ## About
